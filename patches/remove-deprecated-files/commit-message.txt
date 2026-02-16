@@ -1,0 +1,4 @@
+Remove deprecated CI configuration files
+
+Remove .travis.yml, .scrutinizer.yml, and Gruntfile.js
+which are no longer used by this project.

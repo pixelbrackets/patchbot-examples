@@ -1,0 +1,4 @@
+Add .gitattributes with export-ignore rules
+
+Exclude development files (tests, docs, CI config) from
+Composer distribution archives to reduce package size.

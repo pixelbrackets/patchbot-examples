@@ -1,0 +1,4 @@
+[TASK] Update TYPO3 core to latest minor release
+
+Update TYPO3 CMS core packages to the latest available
+minor version within the existing version constraints.

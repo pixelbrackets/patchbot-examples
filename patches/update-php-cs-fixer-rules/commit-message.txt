@@ -1,0 +1,4 @@
+Add no_unused_imports rule to PHP-CS-Fixer config
+
+Enable the no_unused_imports rule to automatically remove
+unused import statements during code style fixes.

@@ -1,0 +1,4 @@
+Rename old-company to new-company
+
+Replace all occurrences of the old vendor name (old-company)
+and PHP namespace (OldCompany) with the new one after rebranding.

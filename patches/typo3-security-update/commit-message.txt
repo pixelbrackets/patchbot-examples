@@ -1,0 +1,4 @@
+[SECURITY] Update TYPO3 core to latest security release
+
+Update TYPO3 CMS core packages to address the latest
+security advisory. See https://typo3.org/security/advisories

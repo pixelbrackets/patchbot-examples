@@ -1,0 +1,3 @@
+Add vendor/package-name dependency
+
+Add vendor/package-name to composer.json as a project dependency.

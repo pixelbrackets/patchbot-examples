@@ -1,0 +1,4 @@
+[FEATURE] 🔧 Add EditorConfig
+
+Add a EditorConfig configuration file to help maintain consistent
+coding styles for multiple developers using various editors and IDEs.

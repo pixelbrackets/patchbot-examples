@@ -1,0 +1,4 @@
+Rename LICENSE to LICENSE.txt
+
+Rename the license file to include the file extension,
+following the new naming convention.

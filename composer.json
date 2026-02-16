@@ -1,0 +1,8 @@
+{
+    "name": "pixelbrackets/patchbot-examples",
+    "description": "Example patches for Patchbot - ready to use, customize, or learn from",
+    "license": "GPL-2.0-or-later",
+    "require-dev": {
+        "pixelbrackets/patchbot": "^3.0"
+    }
+}
