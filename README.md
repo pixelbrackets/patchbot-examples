@@ -22,30 +22,17 @@ Copy a patch into your own Patchbot project and adjust it to your needs.
 
 ## Usage
 
-### Import a single patch
-
-Copy a patch directory into your Patchbot project:
+### Import
 
 ```bash
-cp -r /path/to/patchbot-examples/patches/add-editorconfig my-patches/patches/
-```
+# Create a skeleton project if you don't have one yet
+composer create-project pixelbrackets/patchbot-skeleton my-patches
 
-Or clone this repo and copy what you need:
+# Import all patches
+./vendor/bin/patchbot import https://github.com/pixelbrackets/patchbot-examples
 
-```bash
-git clone https://github.com/pixelbrackets/patchbot-examples.git
-cp -r patchbot-examples/patches/add-editorconfig my-patches/patches/
-```
-
-### Use the whole repo as a patch project
-
-This repository follows the Patchbot project structure. You can use it
-directly with Patchbot:
-
-```bash
-cd patchbot-examples
-composer require pixelbrackets/patchbot
-./vendor/bin/patchbot patch add-editorconfig git@gitlab.com:user/repo.git
+# Import a single patch only by path
+./vendor/bin/patchbot import https://github.com/pixelbrackets/patchbot-examples --path=patches/add-editorconfig
 ```
 
 ### Customize
@@ -56,10 +43,18 @@ file paths, search strings). Edit them before running the patch.
 All patches are idempotent - they skip gracefully when the change was
 already applied.
 
-## Writing your own patches
-
 See the [Patchbot walkthrough](https://github.com/pixelbrackets/patchbot/blob/master/docs/walkthrough.md)
 for a guide on creating and testing patches.
+
+### Apply
+
+```bash
+# Apply a patch to a single repository
+./vendor/bin/patchbot patch add-editorconfig git@gitlab.com:user/repo.git
+```
+
+Read the full guides on [applying patches](https://github.com/pixelbrackets/patchbot/#usage) to a selected repository
+or across many repositories in batch mode.
 
 ## License
 
